@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梯形练习</title>
+    <style>
+        .square::after{
+            content:"";
+            display: block;
+            clear:both;
+            width:0px;
+            height:0px;
+            border-top:10px solid red;
+            border-right:300px solid  rgba(0,0,0,0);
+            border-bottom:10px solid rgba(0,0,0,0);
+            border-left:300px solid red;
+            margin-top: 5px;
+        }
+        .square{
+            width:600px;
+            height:5px;
+            background-color:chartreuse;
+            float:left;
+            /* margin-bottom:10px; */
+            /* margin-bottom: 2px; */
+        }
+        .lab{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="square"></div>
+    <div class="lab" style="color:darksalmon">实验</div>
+    
+</body>
+</html>
