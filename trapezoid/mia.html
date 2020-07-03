@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div{
+        position: relative;
+        display: inline-block;
+        padding: 100px 200px 100px;
+        color: red;
+    }
+    .div::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: red;
+        transform-origin: top left;
+        transform: perspective(100px) rotateY(10deg);
+    }
+</style>
+<body>
+    <div class="div"></div>
+</body>
+</html>
