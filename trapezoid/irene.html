@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 1. 梯形 */
+    .box1 {
+      width: 0;
+      height: 50px;
+      border-left: 500px solid #E5C3B2;
+      border-bottom: 50px solid transparent;
+    }
+
+    /* 三角形 */
+    /* .box1 {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid #E5C3B2;
+    } */
+
+    /* 2. 梯形 */
+    .box2 {
+      width: 500px;
+      height: 50px;
+      position: relative;
+      background-color: #E5C3B2;
+    }
+
+    .box2:after {
+      display: block;
+      content: '';
+      width: 0;
+      border-left: 500px solid #E5C3B2;
+      top: 50px;
+      position: absolute;
+      border-bottom: 50px solid transparent;
+    }
+
+    .box3-parent {
+      width: 500px;
+      height: 70px;
+      overflow: hidden;
+    }
+
+    .box3 {
+      width: 500px;
+      height: 70px;
+      transform: skew(-30deg);
+      background: #E5C3B2;
+      margin-left: -50px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div class="box1"></div> -->
+  <!-- <div class="box2"></div> -->
+  <!-- <div class="box3-parent">
+    <div class="box3"></div>
+  </div> -->
+</body>
+
+</html>
