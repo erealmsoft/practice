@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>wave</title>
+    <style>
+        #btn{
+            width: 200px;
+            height: 35px;
+            line-height: 35px;
+            background-color: orangered;
+            color: white;
+            outline: none;
+            box-shadow: none;
+            border: none;
+            overflow: hidden;
+            position: relative;
+        }
+        .wave{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            transition: all .6s ease-in-out;
+            background-color: white;
+            opacity: .2;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+<button id="btn">wave_Button</button>
+<script>
+    var oneClick = true;
+    document.getElementById("btn").addEventListener('click',function(e){
+        if (oneClick){
+            this.innerHTML += "<div class='wave'></div>";
+            var event = event || window.event;
+            var x = event.clientX;
+            var y = event.clientY;
+            var moveX = this.offsetLeft;
+            var moveY = this.offsetTop;
+            var btnWidth = this.clientWidth;
+            var wave = document.querySelector("#btn .wave");
+            wave.style.borderRadius = 0;
+            wave.style.width = btnWidth*2+'px';
+            wave.style.left = x-moveX-5+'px';
+            wave.style.marginLeft = -btnWidth+'px';
+            wave.style.height = btnWidth*2+'px';
+            wave.style.top = y-moveY-5+'px';
+            wave.style.marginTop = -btnWidth+'px';
+            setTimeout(function(){
+                wave.remove();
+                oneClick = true;
+            },600);
+            oneClick = false;
+        }else {
+            return false;
+        }
+    })
+</script>
+</body>
+</html>
