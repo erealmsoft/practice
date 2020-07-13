@@ -1,1 +1,365 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唯品会</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-top{
+    background: #f5f5f5;
+}
+.top{
+    height: 30px;
+    width: 100%;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1170px;
+    margin: 0 auto;
+}
+.top div{
+    color: #777;
+    font-size: 12px;
+}
+.top span{
+    margin: 0 10px;
+}
+.top span:hover{
+    color: #f00581;
+}
+.top-q-img{
+   height: 15px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 1170px;
+    margin: 15px auto 0;
+    justify-content: space-between;
+}
+.input{
+    display: flex;
+
+    justify-content: space-between;
+}
+.input input{
+    height: 35px;
+    width: 373px;
+    border: 2px solid #fa2a83;
+}
+.input-img{
+    display: flex;
+    align-items: center;
+}
+.input-img img{
+    height: 35px;
+}
+.gwd{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 35px;
+    line-height: 32px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f6f7f9;
+    border-radius: 2px;
+    width: 100px;
+    margin-left: 40px;
+}
+.gwd img{
+    width: 15px;
+    height: 20px;
+}
+.gwd div{
+    height: 16px;
+    width: 24px;
+    line-height: 16px;
+    color: #fff;
+    text-align: center;
+    background-color: #f00581;
+    border-radius: 8px;
+}
+.input-list{
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+.input-list span{
+    margin: 10px;
+}
+.logo-left img{
+    width: 110px;
+    height: 100px;
+}
+.logo-left .logo-img{
+    width: 150px;
+    height: 90px;
+}
+.nav{
+    width: 1170px;
+    margin: 10px auto 0;
+    display: flex;
+    align-items: center;
+}
+.nav div{
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+}
+.nav div:hover{
+    color: #f00581;
+}
+.nav div:first-child{
+    background-color: #f00581;
+    color: #fff;
+}
+.bg{
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+.bg-img{
+    width: 100%;
+    height: 100%;
+}
+.bg-img-p{
+    width: 58%;
+    height: 440px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -29%;
+    object-fit: cover;
+}
+.selected{
+    width: 1146px;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.selected>div{
+    padding: 0 40px;
+    font-size: 14px;
+    color: #999;
+    position: relative;
+}
+.selected>div div{
+    width: 100%;
+    height: 3px;
+    background-color: #f00581;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: none;
+}
+.selected>div:hover div{
+    display: block;
+}
+.logo2{
+    width: 1170;
+    height: 120px;
+    margin: 20px auto;
+    display: block;
+}
+.bgs{
+    display: flex;
+    width: 1146px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.bgs>div{
+    width: 570px;
+    height: 372px;
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 95px;
+}
+.bgs .item-left{
+   margin-top: -8px;
+}
+.itemLeft{
+    margin-left: 8px;
+}
+.itemLeft img{
+    width: 170px;
+    height: 217px;
+}
+.itemLeft>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.itemLeft>div div{
+    padding: 2px 5px;
+    background-color: #f00581;
+    font-size: 12px;
+    border-radius: 10px;
+    color: #fff;
+}
+.bgs .item-right{
+    justify-content: space-around;
+}
+.itemRight img{
+    width: 170px;
+    height: 217px;
+    display: block;
+}
+.itemRight>div{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+    background-color: rgb(242, 242, 242);
+    position: relative;
+}
+.itemRight>div div{
+    background-color: #f00581;
+    font-size: 12px;
+    color: #fff;
+    padding:2px 5px;
+    margin-left: 20px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+</style>
+<body>
+    <div class="top-top">
+        <div class="top">
+            <div><span>广州</span><img src="./img/箭头.png" alt=""></div>
+            <div>
+                <span>请登录</span>/
+                <span>注册</span>/
+                <span ><img class="top-q-img" src="./img/签到.png" alt=""> 签到有礼</span>/
+                <span>我的订单</span>/
+                <span>我的特卖</span>/
+                <span>会员俱乐部</span>/
+                <span>客服服务<img src="./img/箭头2.png" alt=""></span>/
+                <span>手机版</span>/
+                <span>更多<img src="./img/箭头2.png" alt=""></span>
+            </div>
+        </div>
+    </div>
+    <div class="logo">
+        <div class="logo-left">
+            <img class="logo-img" src="./img/logo.png" alt="">
+            <img src="./img/1.png" alt="">
+            <img src="./img/2.png" alt="">
+            <img src="./img/3.png" alt="">
+        </div>
+        <div class="input">
+            <div>
+                <div class="input-img">
+                    <input type="text">
+                    <img  src="./img/搜索.png" alt="">
+                </div>
+                <div class="input-list">
+                    <span>连衣裙</span>|
+                    <span>连衣裙</span>|
+                    <span>连衣裙</span>|
+                    <span>连衣裙</span>|
+                    <span>连衣裙</span>
+                </div>
+            </div>
+            <div class="gwd">
+                <img src="./img/购物袋.png" alt="">
+                购物袋
+                <div>0</div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div> <img src="./img/class.png" alt=""> 商品分类</div>
+        <div style="font-weight: bold; color: #f00581;">首页</div>
+        <div style="font-weight: bold;"> <img style="margin-right: 10px;" src="./img/gif.gif" alt=""> 时尚风暴</div>
+        <div>最后疯抢</div>
+        <div>唯品快抢</div>
+        <div>女装</div>
+        <div>母婴</div>
+        <div>家电</div>
+        <div>国际</div>
+        <div>美妆</div>
+        <div>鞋包</div>
+        <div>男装</div>
+        <div>更多 <img src="./img/箭头3.png" alt=""> </div>
+    </div>
+    <div class="bg">
+        <img class="bg-img" src="./img/bg.jpg" alt="">
+        <img class="bg-img-p" src="./img/cou.jpg" alt="">
+    </div>
+    <div class="selected">
+        <div>
+            耐克VIP大牌日 夏季鞋服69元起
+            <div></div>
+        </div>
+        <div>水星家纺VIP大牌日 低至1折<div></div></div>
+    </div>
+    <img class="logo2" src="./img/logo2.png" alt="">
+    <div style="text-align: center;">
+        <img src="./img/list1.png" alt="">
+        <img src="./img/list2.png" alt="">
+        <img src="./img/list3.png" alt="">
+    </div>
+    <div class="bgs">
+        <div style="background: url(./img/bg1.jpg) no-repeat 100%/100%;" class="item-left">
+            <div class="itemLeft">
+                <img src="./img/item1.png" alt="">
+                <div>
+                    <div>疯抢价</div>
+                   ￥110
+                </div>
+            </div>
+            <div class="itemLeft">
+                <img src="./img/item2.png" alt="">
+                <div>
+                    <div>疯抢价</div>
+                   ￥110
+                </div>
+            </div>
+            <div class="itemLeft">
+                <img src="./img/item3.png" alt="">
+                <div>
+                    <div>疯抢价</div>
+                   ￥110
+                </div>
+            </div>
+            
+        </div>
+        <div class="item-right" style="background: url(./img/bg2.jpg) no-repeat 100%/100%;">
+            <div class="itemRight">
+                <img src="./img/item4.png" alt="">
+                <div>
+                    连衣裙
+                    <div>榜</div>
+                </div>
+            </div>
+            <div class="itemRight">
+                <img src="./img/item5.png" alt="">
+                <div>
+                    护肤套装
+                    <div>榜</div>
+                </div>
+            </div>
+            <div class="itemRight">
+                <img src="./img/item6.png" alt="">
+                <div>
+                    女式T恤
+                    <div>榜</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
