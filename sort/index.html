@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>排序</title>
+</head>
+
+<body>
+    <h1>请写一个函数给以下任务排序</h1>
+    <p>说明：数组中每个对象的<code>name</code>属性表示当前任务的名称，<code>dependency</code>属性表示当前任务的依赖项，做当前任务时依赖项里面的任务必须全部完成</p>
+    <p>要求：js代码内嵌到一个HTML文件中，最后的输出结果直接显示到HTML页面里</p>
+    <code>
+        const tasks = [{
+            name: '玩游戏',
+            dependency: ['吃早饭', '洗脸', '刷牙']
+        }, {
+            name: '起床',
+            dependency: []
+        }, {
+            name: '洗脸',
+            dependency: ['刷牙']
+        }, {
+            name: '洗脸',
+            dependency: ['刷牙']
+        }, {
+            name: '喝水',
+            dependency: ['吃午饭']
+        }, {
+            name: '睡觉',
+            dependency: ['洗澡']
+        }, {
+            name: '看电视',
+            dependency: ['跑步', '喝水']
+        }, {
+            name: '洗澡',
+            dependency: ['洗脸', '看电视']
+        }, {
+            name: '吃早点',
+            dependency: ['起床', '洗脸']
+        }, {
+            name: '吃午饭',
+            dependency: ['刷', '午休']
+        }, {
+            name: '跑步',
+            dependency: ['吃早点', '起床']
+        }, {
+            name: '午休',
+            dependency: ['吃早点', '起床', '玩游戏']
+        }, {
+            name: '吃早饭',
+            dependency: ['起床', '洗脸', '跑步']
+        }]
+    </code>
+</body>
+
+
+
+
+
+</html>
